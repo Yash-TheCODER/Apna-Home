@@ -4,7 +4,7 @@ import ListingItem from '../components/ListingItem';
 
 export default function Search() {
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const [sidebardata, setSidebardata] = useState({
     searchTerm: '',
     type: 'all',
@@ -69,9 +69,7 @@ export default function Search() {
 
   const handleChange = (e) => {
     if (
-      e.target.id === 'all' ||
-      e.target.id === 'rent' ||
-      e.target.id === 'sale'
+      e.target.id === 'all' || e.target.id === 'rent' || e.target.id === 'sale'
     ) {
       setSidebardata({ ...sidebardata, type: e.target.id });
     }
@@ -81,9 +79,7 @@ export default function Search() {
     }
 
     if (
-      e.target.id === 'parking' ||
-      e.target.id === 'furnished' ||
-      e.target.id === 'offer'
+      e.target.id === 'parking' || e.target.id === 'furnished' || e.target.id === 'offer'
     ) {
       setSidebardata({
         ...sidebardata,
@@ -94,9 +90,7 @@ export default function Search() {
 
     if (e.target.id === 'sort_order') {
       const sort = e.target.value.split('_')[0] || 'created_at';
-
       const order = e.target.value.split('_')[1] || 'desc';
-
       setSidebardata({ ...sidebardata, sort, order });
     }
   };
@@ -248,6 +242,15 @@ export default function Search() {
             listings.map((listing) => (
               <ListingItem key={listing._id} listing={listing} />
             ))}
+
+          {showMore && (
+            <button
+              onClick={onShowMoreClick}
+              className='text-green-700 hover:underline p-7 text-center w-full'
+            >
+              Show more
+            </button>
+          )}
         </div>
       </div>
     </div>
