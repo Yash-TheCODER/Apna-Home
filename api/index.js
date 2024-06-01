@@ -23,7 +23,7 @@ const __dirname = path.resolve();
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
-const PORT = process.env.PORT || 4000;
+// const PORT = process.env.PORT || 4000;
 
 app.listen(3000, () => {
     console.log(`Server is running at PORT 3000`);
