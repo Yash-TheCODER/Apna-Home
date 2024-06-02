@@ -1,7 +1,7 @@
 
 # Apna Home 🚀
 
-The Real Estate Project is a web application designed for browsing and managing real estate listings. It provides users with the ability to search for properties, view details, and contact agents. The project utilizes the MERN stack (MongoDB, Express.js, React.js, Node.js) for the backend and frontend development, Tailwind CSS for styling, React Form Hook for form management, JWT token for authentication, Firebase OAuth for user authentication, Firestore for storing data, Vite for the build tool, and is hosted on Render.
+Apna Home Project is a web application designed for browsing and managing homes and flat listings. It provides users with the ability to search for properties, view details, and contact agents. The project utilizes the MERN stack (MongoDB, Express.js, React.js, Node.js) for the backend and frontend development, Tailwind CSS for styling, React Form Hook for form management, JWT token for authentication, Firebase OAuth for user authentication, Firestore for storing data, Vite for the build tool, and is hosted on Render.
 
 
 
